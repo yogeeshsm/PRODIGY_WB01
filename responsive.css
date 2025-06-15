@@ -9,10 +9,12 @@ body {
     text-align: center;
     color: #333;
     margin: 0;
+    padding: 0 1rem;
 }
 
 #main {
     background-color: #eee;
+    padding: 2rem 1rem;
 }
 
 h1 {
@@ -29,24 +31,51 @@ a {
 }
 
 #headline {
-    margin: 50px 0;
+    margin: 3rem 0;
     text-align: center;
 }
 
 ul {
-    max-width: 550px;
-    margin: 60px auto 50px auto;
+    max-width: 90vw;
+    width: 100%;
+    margin: 3rem auto 2rem auto;
     text-align: left;
     line-height: 1.6;
+    padding: 0 1rem;
+    box-sizing: border-box;
 }
 
 li {
-    margin: 16px 0;
+    margin: 1rem 0;
 }
 
 blockquote {
     font-style: italic;
-    max-width: 500px;
-    margin: 0 auto 50px auto;
+    max-width: 90vw;
+    margin: 0 auto 2rem auto;
     text-align: left;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+/* --- Responsive Media Queries --- */
+@media (min-width: 600px) {
+    ul, blockquote {
+        max-width: 550px;
+    }
+    blockquote {
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    body {
+        font-size: 1.3rem;
+    }
+    #headline {
+        margin: 2rem 0;
+    }
 }
